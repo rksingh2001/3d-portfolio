@@ -55,7 +55,7 @@ const Home = () => {
           <ambientLight intensity={0.6} />
           <hemisphereLight skyColor="#b1e1ff" groundColor="#000000" intensity={1.5} />
           
-          <Sky />
+          <Sky isRotating={isRotating} />
           <Bird />
           <Plane isRotating={isRotating} position={planePosition} scale={planeScale} rotation={[0, 20, 0]} />
           <Island position={islandPosition} scale={islandScale} rotation={islandRotation} isRotating={isRotating} setIsRotating={setIsRotating} setCurrentStage={setCurrentStage} />
