@@ -9,7 +9,6 @@ const Plane = ({ isRotating, ...props }: any) => {
   const { actions } = useAnimations(animations, ref);
 
   useEffect(() => {
-    console.log(animations[0]);
     if (isRotating) {
       actions['Take 001']?.play();
     } else {
